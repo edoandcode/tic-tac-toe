@@ -1,0 +1,67 @@
+:root {
+    --gutter: 15px;
+    --col: 6;
+}
+
+.container {
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--gutter) * -1);
+    margin-right: calc(var(--gutter) * -1);
+}
+
+.row.justify-center {
+    justify-content: center;
+}
+
+.row.align-center {
+    align-items: center;
+}
+
+.col {
+    flex: 0 0 calc(100% / (12/var(--col)));
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+}
+
+.col.col-1 {
+    --col: 1;
+}
+.col .col-2 {
+    --col: 2;
+}
+.col.col-3 {
+    --col: 3;
+}
+.col.col-4 {
+    --col: 4;
+}
+.col.col-5 {
+    --col: 5;
+}
+.col.col-6 {
+    --col: 6;
+}
+.col.col-7 {
+    --col: 7;
+}
+.col.col-8 {
+    --col: 8;
+}
+.col.col-9 {
+    --col: 9;
+}
+.col.col-10 {
+    --col: 10;
+}
+.col.col-11 {
+    --col: 11;
+}
+.col.col-12 {
+    --col: 12;
+}

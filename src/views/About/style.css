@@ -1,0 +1,9 @@
+.text-wrapper {
+    padding: var(--space-large) 0px;
+    text-align: center;
+}
+
+.text-wrapper h1 {
+    color: var(--color-ui);
+    margin-bottom: var(--space-small);
+}

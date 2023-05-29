@@ -1,0 +1,22 @@
+header {
+    padding: 20px 0px;
+    background-color: var(--color-layout);
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 var(--space-small);
+    color: var(--color-light);
+}
+
+nav ul li a:hover, nav ul li a.router-link-active  {
+    color: var(--color-ui);
+}

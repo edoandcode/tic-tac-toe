@@ -1,0 +1,96 @@
+.game-wrapper {
+    padding: var(--space-large) 0px;
+}
+
+.schema {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    border: solid 1px var(--color-layout);
+}
+
+.schema .cell {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--color-layout);
+    position: relative;
+}
+
+.schema .cell.win-cell .cross:after, .schema .cell.win-cell .cross:before {
+    background-color: var(--color-ui);
+}
+
+.schema .cell.win-cell .circle {
+    border-color: var(--color-ui);
+}
+
+.schema .cell .cross:after, .schema .cell .cross:before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 70px;
+    background-color: var(--color-cross);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.schema .cell .cross.active:after, .schema .cell .cross.active:before {
+    opacity: 1;
+}
+
+.schema .cell .cross.hover:after, .schema .cell .cross.hover:before {
+    opacity: 0.2;
+}
+
+.schema .cell .cross:after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.schema .cell .cross:before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.schema .cell .circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid 3px var(--color-circle);
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.schema .cell .circle.active {
+    opacity: 1;
+}
+
+.schema .cell .circle.hover {
+    opacity: 0.2;
+}
+
+button.button {
+    height: 40px;
+    outline: none;
+    background-color: transparent;
+    border: solid 2px var(--color-ui);
+    border-radius: 20px;
+    padding: 0px 30px;
+    color: var(--color-ui);
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    margin: var(--space-medium) auto;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+button.button:hover {
+    background-color: var(--color-ui);
+    color: var(--color-dark);
+}
