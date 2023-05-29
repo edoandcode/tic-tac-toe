@@ -1,5 +1,5 @@
 {
-  "name": "my-vue-app",
+  "name": "tic-tac-toe",
   "version": "0.0.0",
   "private": true,
   "scripts": {
